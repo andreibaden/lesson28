@@ -10,6 +10,6 @@ for human in ls:
 adult = Manager.count_adult(ls)
 underage = Manager.count_underage(ls)
 
-print(f"Adult = {adult}")
-print(f"Underage = {underage}")
+print(f"Adult --> {adult}")
+print(f"Underage --> {underage}")
 

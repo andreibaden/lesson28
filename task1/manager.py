@@ -1,4 +1,4 @@
-from human import Human
+from task1.human import Human
 
 class Manager:
     @staticmethod
