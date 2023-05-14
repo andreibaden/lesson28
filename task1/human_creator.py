@@ -8,7 +8,7 @@ class HumanCreator:
     def create(size=10):
         humans = []
         NAMES = ("Alex", "Peter", "Garry", "Alice", "Olga",
-                "Anna", "Kate", "Max", "Andy", "Victor")
+                 "Anna", "Kate", "Max", "Andy", "Victor")
         MAX_AGE = 120
         MIN_AGE = 1
 
@@ -21,3 +21,4 @@ class HumanCreator:
             humans.append(xman)
 
         return humans
+

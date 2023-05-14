@@ -1,8 +1,8 @@
-from human import Human
-from manager import Manager
 from human_creator import HumanCreator
+from manager import Manager
+from human import Human
 
-ls = HumanCreator.create(20)
+ls = HumanCreator.create(15)
 
 for human in ls:
     print(human)
@@ -10,6 +10,5 @@ for human in ls:
 adult = Manager.count_adult(ls)
 underage = Manager.count_underage(ls)
 
-print(f"Adult --> {adult}")
-print(f"Underage --> {underage}")
-
+print(f"Adult - {adult}")
+print(f"Underage - {underage}")
