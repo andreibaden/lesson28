@@ -19,5 +19,4 @@ class Doctor(Human):
             self.__experience = experience
 
     def __str__(self):
-        return (super().__str__()
-                + f"Experience: {self.__experience}")
+        return super().__str__() + f"Experience: {self.__experience}."

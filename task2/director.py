@@ -19,5 +19,4 @@ class Director(Human):
             self.__power = power
 
     def __str__(self):
-        return (super().__str__()
-                + f"Power: {self.__power}")
+        return super().__str__() + f"Power: {self.__power}."
