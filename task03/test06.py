@@ -1,3 +1,6 @@
+# Testing Inheritance as Code Reuse
+# (Тестирование наследования, как повторное использование кода)
+
 class Super(object):
     def __init__(self, name="Anna"):
         self._name = name
@@ -16,7 +19,7 @@ class Super(object):
 
     @classmethod
     def cmethod(cls):
-        print("static method from Super class")
+        print("class method from Super class")
 
     def function(a, b):
         c = a + b
@@ -29,11 +32,16 @@ class Subclass(Super):
 
 sub = Subclass("Andrei")
 sub.walk()
-print(sub._name)
+
 print(sub.name)
+print(sub._name)
+print("___________")
+
 Subclass.smethod()
 sub.smethod()
+
 Subclass.cmethod()
 sub.cmethod()
+
 Subclass.function(4, 5)
-# sub.function(4, 5)   TypeError: Super.function() takes 2 positional arguments but 3 were given
+# sub.function(4, 5)       TypeError: Super.function() takes 2 positional arguments but 3 were given

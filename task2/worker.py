@@ -12,7 +12,7 @@ class Worker:
 
     @salary.setter
     def salary(self, salary):
-        if isinstance(salary, int) and 0 <= salary:
+        if isinstance(salary, int) and salary > 0:
             self.__salary = salary
 
     @property
