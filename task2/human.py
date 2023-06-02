@@ -1,7 +1,7 @@
 # Human - Entity Class
 class Human:
 
-    def __init__(self, name='no name', age=1, alive=True):
+    def __init__(self, name='no name', age='1', alive=True):
         self.__name = name
         self.__age = age
         self.__alive = alive
@@ -38,15 +38,15 @@ class Human:
                 f"Is alive? - {'YES' if self.__alive else 'NO'}. ")
 
 
-def main():
-    h1 = Human()
-    h1.name = 1234
-    h1.age = -20
-    print(h1)
-
-    h2 = Human("Kate", 18, False)
-    print(h2)
-
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     h1 = Human()
+#     h1.name = 1234
+#     h1.age = -20
+#     print(h1)
+#
+#     h2 = Human("Kate", 18, False)
+#     print(h2)
+#
+#
+# if __name__ == "__main__":
+#     main()

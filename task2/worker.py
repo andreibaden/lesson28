@@ -2,7 +2,7 @@ from human import Human
 
 
 class Worker(Human):
-    def __init__(self, name='no name', age=1, alive=True, salary=0):
+    def __init__(self, name='no name', age='1', alive=True, salary=0):
         super().__init__(name, age, alive)
         self.__salary = salary
 
